@@ -1,6 +1,6 @@
 const apiKey = '7b3405e1';
 let movie = prompt('Busque una Pelicula : ');
-const urlApi = `http://www.omdbapi.com/?apikey=${apiKey}&s=${movie}`;
+const urlApi = `https://www.omdbapi.com/?apikey=${apiKey}&s=${movie}`;
 	
 fetch(urlApi)
 	.then(resp => resp.json())
