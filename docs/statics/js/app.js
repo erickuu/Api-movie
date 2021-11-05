@@ -10,7 +10,7 @@ fetch(urlApi)
 let watch = (data)=>{
 	if(data.Response === "False"){
 		// <iframe src="https://giphy.com/embed/kNwQN4ueScpbaeWtef" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/netflix-season-1-episode-squid-game-kNwQN4ueScpbaeWtef">via GIPHY</a></p>
-		let article = document.getElementById('article-head').innerHTML = '<strong>Lo sentimos mucho</strong>, no encontramos lo que buscabas. <h1>😓<h1> <iframe src="https://giphy.com/embed/kNwQN4ueScpbaeWtef" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/netflix-season-1-episode-squid-game-kNwQN4ueScpbaeWtef"></a></p>';
+		let error1 = document.getElementById('article-head').innerHTML = '<strong>Lo sentimos mucho</strong>, no encontramos lo que buscabas. <h1>😓<h1> <iframe src="https://giphy.com/embed/kNwQN4ueScpbaeWtef" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/netflix-season-1-episode-squid-game-kNwQN4ueScpbaeWtef"></a></p>';
 	}
 	let body = '';
 	for(var i = 0 ; i < data.Search.length; i++){

@@ -13,33 +13,17 @@
 	<!-- Tailwinds -->
 	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 	<!-- EndTailwinds -->
-	<!-- Boostrap -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 	<!-- end Boostrap -->
 	<title>List Moviesite</title>
 </head>
 <body>
-
-	<nav id="navbar" class=" navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand text-4xl" href="/">MoviesRick</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-	        <li class="nav-item">
-	          <a class="nav-link active text-3xl" aria-current="page" href="https://github.com/erickuu/">Github</a>
-	        </li>
-	        <li class="nav-item text-3xl">
-	          <a class="nav-link text-3xl" href="https://twitter.com/Erick96798942">Twitter</a>
-      </ul>
       <form class="d-flex">
+	    <a class="px-3 text-2xl mx-auto font-semibold rounded-lg shadow-md text-white bg-yellow-400 hover:bg-yellow-600" aria-current="page" href="https://github.com/erickuu/" target="_blank">Github</a>
+	    <a class="px-3 text-2xl mx-auto font-semibold rounded-lg shadow-md text-white bg-yellow-400 hover:bg-yellow-600" href="https://twitter.com/Erick96798942" target="_blank">Twitter</a>
         <!-- <button id="button" class="btn btn-outline-success" type="submit" onclick="alertSearch()">Buscar!</button> -->
-        <button class="px-3 text-2xl font-semibold rounded-lg shadow-md text-white bg-green-400 hover:bg-green-800" onclick="alertSearch()">
-  Busquemos Pelis!
-</button>
+        <button class="px-3 text-2xl mx-auto font-semibold rounded-lg shadow-md text-white bg-green-400 hover:bg-green-800" onclick="reset()">
+  			Busquemos Pelis!
+		</button>
       </form>
     </div>
   </div>
@@ -47,26 +31,27 @@
 
 
 
-	<main class="container-main">
+	<main class="container-main text-white">
 		<section class="container-section">
-			<article id="article-head">
-				<h1>Movies Rick</h1>
+			<article id="article-head" class="article-head text-3xl text-center">
+				<h1 class="text-4xl text-center ">Movies Rick</h1>
 				<h2>Para buscar una peli , Pulsar el boton de arriba.
 					😄🙆
 				</h2>
+				<ol id="ol-error" class="text-2xl text-left"></ol>
 			</article>
-			<table id="container container-table" class="table-auto sm:w-full text-4xl  text-center p-0">
-				<thead id="table-head" class="table-head pb-3">
-					<tr>
-						<th>Nombre</th>
-						<th>Año</th>
-						<th>Poster de La peli</th>
-					</tr>
-				</thead>
-				<tbody id="tbody">
-					
-				</tbody>
-			</table>
+				<table id="container container-table" class="table-auto m-auto sm:w-full text-4xl  text-center p-0">
+					<thead id="table-head" class="table-head pb-3">
+						<tr>
+							<th>Nombre</th>
+							<th>Año</th>
+							<th>Poster de La peli</th>
+						</tr>
+					</thead>
+					<tbody id="tbody">
+						
+					</tbody>
+				</table>
 		</section>
 	</main>
 
